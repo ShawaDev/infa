@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+	<style>
+		body {
+			background-color: #333;
+			font-family: Arial, sans-serif;
+		}
+		header {
+			background-color: #444;
+			padding: 20px;
+			text-align: center;
+			color: #fff;
+			border-radius: 5px 5px 0 0;
+		}
+		h1 {
+			margin: 0;
+			font-size: 36px;
+		}
+		form {
+			background-color: #444;
+			padding: 20px;
+			max-width: 500px;
+			margin: 20px auto;
+			box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.5);
+			border-radius: 0 0 5px 5px;
+		}
+		label {
+			display: block;
+			margin-top: 20px;
+			margin-bottom: 5px;
+			font-size: 20px;
+			color: #ddd;
+		}
+		input[type="text"], input[type="email"], input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			background-color: #555;
+			color: #ddd;
+			border: none;
+			border-radius: 5px;
+		}
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px;
+			margin-top: 20px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Registration Page</h1>
+	</header>
+	<form action="1.php" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+
+        <label for="password">Confirm password:</label>
+        <input type="password" id="confpass" name="confpass">
+
+        <label for="phoneNumber">Phone number:</label>
+        <input type="text" id="phoneNum" name="phoneNum" required>
+
+        <label for=""></label>
+
+		<input type="submit" name="formSubmit" value="Register">
+	</form>
+</body>
+</html>
