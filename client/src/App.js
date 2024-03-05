@@ -6,6 +6,7 @@ import Regpage from './component/Regpage';
 import Mainpage from './component/Mainpage';
 import Aboutpage from './component/Aboutpage';
 import Contactspage from './component/Contactspage';
+import Tattoospage from './component/Tattoospage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<Mainpage />} />
         <Route path='/about' element={<Aboutpage />} />
         <Route path='/contacts' element={<Contactspage />} />
+        <Route path='/tattoo/:id' element={<Tattoospage />}/>
       </Routes>
     </BrowserRouter>
   );

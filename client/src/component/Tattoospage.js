@@ -1,13 +1,13 @@
 import React from 'react'
 import Header from './Header'
-import Main from './Main'
 import Footer from './Footer'
+import TattooDetails from './TattooDetails'
 
-export default function Mainpage() {
+export default function Tattoospage() {
   return (
     <div>
         <Header />
-        <Main />
+        <TattooDetails />
         <Footer />
     </div>
   )

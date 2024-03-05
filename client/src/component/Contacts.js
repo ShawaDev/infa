@@ -1,22 +1,49 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import { Container, Typography, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
+import PublicIcon from '@mui/icons-material/Public';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Contacts = () => {
   return (
     <Container>
-        
-          <h2>Контактная информация</h2>
-          <ul>
-            <li><strong>Адрес:</strong> Сатпаева 71</li>
-            <li><strong>Телефон:</strong> +7 777 777 77 77</li>
-            <li><strong>Email:</strong> zabey.kz@gmail.com</li>
-            <li><strong>Сайт:</strong> zabey.kz</li>
-            <li><strong>Социальные сети:</strong> Instagram: @zabey.kz</li>
-          </ul>
+      <Typography variant="h2" gutterBottom>
+        Контактная информация
+      </Typography>
+      <List>
+        <ListItem>
+          <ListItemIcon>
+            <LocationOnIcon />
+          </ListItemIcon>
+          <ListItemText primary="Адрес: Сатпаева 71" />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <PhoneIcon />
+          </ListItemIcon>
+          <ListItemText primary="Телефон: +7 777 777 77 77" />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <EmailIcon />
+          </ListItemIcon>
+          <ListItemText primary="Email: zabey.kz@gmail.com" />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <PublicIcon />
+          </ListItemIcon>
+          <ListItemText primary="Сайт: zabey.kz" />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <InstagramIcon />
+          </ListItemIcon>
+          <ListItemText primary="Instagram: @zabey.kz" />
+        </ListItem>
+      </List>
     </Container>
   );
 };

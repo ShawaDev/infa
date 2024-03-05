@@ -25,11 +25,3 @@ func SignUp(c *gin.Context) {
 		"msg": "user saved",
 	})
 }
-
-func GetImg(c *gin.Context) {
-	id := c.Param("id")
-
-	c.JSON(200, gin.H{
-		"msg": id,
-	})
-}
